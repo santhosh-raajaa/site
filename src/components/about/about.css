@@ -1,0 +1,126 @@
+.about_container {
+    display: grid;
+    grid-template-columns: 35% 50%;
+    gap: 15%;
+}
+ 
+.about_me {
+    width: 100%;
+    aspect-ratio: 1/1.1;
+    border-radius: 2rem;
+    background: linear-gradient(
+                45deg,
+                transparent,
+                var(--color-primary),
+                transparent);
+    display: grid;
+    place-items: center;
+    box-shadow: rgb(37, 127, 152) 0px 0px 5px 5px ;
+}
+
+.about_me-image {
+    border-radius: 2rem;
+    overflow: hidden;
+    transform: rotate(10deg);
+    box-shadow:0 0 1rem 0.8rem rgb(0, 0, 0);
+    transition: var(--transition);
+}
+
+.about_me-image:hover{
+    transform: scale(0.9) rotate(0deg);
+}
+
+.about_cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5em;
+}
+
+.about_card {
+    transition: var(--transition);
+    background: var(--color-bg-variant);
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: rgba(45, 85, 187, 0.648) 0px 3px 2px 5px;
+}
+
+.about_card:hover{
+    background: var(--color-primary-variant);
+    cursor: default;
+}
+
+.about_icon{
+    color: var(--color-primary);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.about_card h5 {
+    font-size: 0.95 rem;
+}
+
+.about_card small{
+    font-size: 0.7rem;
+    color: var(--color-light);
+}
+
+.about_content p{
+    padding-left: 2rem;
+    margin: 2rem 0 2.6rem;
+    color: var(--color-light);
+}
+
+.about_content .about_list-icon{
+    position: absolute;
+    color: var(--color-primary);
+    font-size: 1.5rem;
+}
+
+.about_content{
+    text-align: justify;
+}
+
+/* ########### media queries (Medium devices) ############ */
+
+@media screen and (max-width:1024px){
+    .about_container{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .about_me{
+        width: 50%;
+        margin: 2rem auto 4rem;
+    }
+    .about_me,.about_me-image{
+        border-radius: 1rem;
+    }
+
+    .about_content p{
+        margin: 1.2rem 0 1.8rem;
+    }
+
+    .about_content .about_button{
+        display: flex;
+    }
+    .about_content a{
+        margin: auto;
+    }
+}
+
+/* ########### media queries (Medium devices) ############ */
+
+@media screen and (max-width:600px){
+    
+    .about_cards{
+        transform: scale(0.8);
+        grid-template-columns: 1fr;
+    }
+    .about_me{
+        width: 60%;
+        margin: 1rem auto 2rem;
+    }
+
+}

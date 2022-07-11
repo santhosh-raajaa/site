@@ -1,0 +1,129 @@
+header{
+    height:100%;
+    padding-top:7rem;
+    overflow:hidden;
+  }
+
+.header_container{
+    text-align:center;
+    height:100%;
+    position:relative;
+}
+
+/* ######## CTA ########### */
+
+.cta{
+    margin-top: 2.5rem;
+    display:flex;
+    gap:1.2rem;
+    justify-content:center;
+}
+
+/* ######### Socials ####### */
+
+.header__socials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 4rem;
+    top: 36rem;
+    transform: scale(2);
+}
+
+.header__socials::before {
+    content: "";
+    width: 1px;
+    height: 2rem;
+    background : var(--color-primary) ;
+}
+.header__socials::after {
+    content: "";
+    width: 1px;
+    height: 2rem;
+    background : var(--color-primary) ;
+}
+
+.me{
+    background: linear-gradient(var(--color-primary-variant), transparent);
+    width: 50rem;
+    height: 100%;
+    position: relative;
+    left: calc(50% - 25rem);
+    margin: 4rem 0rem 2rem 0rem;
+    border-radius: 0.8rem;
+    overflow: hidden;
+    padding: 1rem;
+    box-shadow: rgb(37, 127, 152) 0px 0px 5px 5px ;
+}
+
+/* ########## scroll down ######### */
+
+.scroll__down{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    left: 32rem;
+    bottom: 20rem;
+    transform: scale(1.5) rotate(90deg);
+}
+
+
+/* ########### media queries (Medium devices) ############ */
+
+@media screen and (max-width:1024px){
+    .me{
+        width: 30rem;
+        left: calc(50% - 15rem); 
+    }
+
+    .header__socials{
+        transform: scale(1.2);
+        left: 4rem;
+        top: 28rem;
+    }
+
+    .scroll__down{
+        left: 22rem;
+        bottom: 15rem;
+        transform: scale(1) rotate(90deg);
+    }
+}
+
+/* ########### media queries (middle devices) ############ */
+
+@media screen and (max-width:800px){
+    .me{
+        width: 30rem;
+        left: calc(50% - 15rem); 
+    }
+    .header__socials{
+        transform: scale(1.2);
+        left: 2rem;
+        top: 28rem;
+    }
+
+    .scroll__down{
+        left: 17rem;
+        bottom: 15rem;
+        transform: scale(1) rotate(90deg);
+    }
+
+    /* .header__socials,.scroll__down{
+        display: none;
+    } */
+}
+
+/* ########### media queries (small devices) ############ */
+
+@media screen and (max-width:600px){
+    .me{
+        width: 16rem;
+        left: calc(50% - 8rem); 
+    }
+    .header__socials,.scroll__down{
+        display: none;
+    }
+    
+}

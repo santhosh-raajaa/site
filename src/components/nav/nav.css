@@ -1,0 +1,68 @@
+nav {
+    width: max-content;
+    display: block;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 0.7rem 1.7rem;
+    z-index: 2;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2rem;
+    display: flex;
+    gap: 2rem;
+    border-radius: 3rem;   
+    backdrop-filter: blur(10px);
+}
+
+nav a{
+    background: transparent;
+    padding: 0.9rem;
+    border-radius: 50%;
+    display: flex;
+    color: var(--color-light);
+    font-size: 1.1rem;
+}
+
+nav a:hover{
+    background: rgba(186, 186, 186, 0.45);
+    transform: scale(1.22);
+    z-index: 1;
+}
+nav a.active:hover{
+    transform: scale(1.22);
+}
+nav a.active{
+    background: var(--color-primary-variant);
+    box-shadow: rgba(36, 130, 173, 0.3) 0px 0px 8px 5px;
+    color:var(--color-white);
+    transform: scale(1.1);
+}
+
+/* ########### media queries (Medium devices) ############ */
+
+@media screen and (max-width:1024px){
+    nav{
+        gap: 1.5rem;
+    }
+}
+
+/* ########### media queries (middle devices) ############ */
+
+@media screen and (max-width:800px){
+    nav{
+        gap: 1rem;
+        left: 50%;
+        transform: translateX(-50%) scale(0.8);
+    }
+}
+
+/* ########### media queries (small devices) ############ */
+
+@media screen and (max-width:600px){
+    nav{
+        left: 50%;
+        transform: translateX(-50%) scale(0.7);
+        gap: 0.6rem;
+        
+    }
+}

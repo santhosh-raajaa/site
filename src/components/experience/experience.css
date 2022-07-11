@@ -1,0 +1,90 @@
+.experience_container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+
+.experience_container >div{
+    background: var(--color-bg-variant);
+    padding: 2rem 5rem;
+    border-radius: 2rem;
+    border: 2px solid transparent;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: var(--transition);
+}
+
+.experience_container >div:hover{
+    background: rgba(28, 65, 122, 0.3);
+    backdrop-filter: blur(2px);
+    border-color: var(--color-bg-variant);
+    cursor: default;
+}
+
+.experience_container h3{
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color-primary);
+}
+
+.experience_content{
+    display: grid;
+    row-gap: 2.5rem;
+}
+
+.experience_details {
+    display: flex;
+    gap: 1rem;
+}
+
+.experience_details small{
+    margin-left: auto;
+}
+
+.experience_details .icon{
+    color: var(--color-primary);
+}
+
+/* ########### media queries (Medium devices) ############ */
+
+@media screen and (max-width:1024px){
+    .experience_container{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .experience_container>div{
+        width: 80%;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+    .experience_content{
+        padding: 1rem;
+    }
+}
+
+/* ########### media queries (Small devices) ############ */
+
+@media screen and (max-width:600px){
+    .experience_container{
+        gap: 2rem;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .experience_container>div{
+        width: 90%;
+        padding: 2rem 1rem;
+    }
+
+    .experience_content{
+        padding: 1rem;
+    }
+
+}
+
+/* ########### media queries (Dappa devices) ############ */
+
+@media screen and (max-width:290px){
+    .experience_details small{
+        display: none;
+    }
+}
