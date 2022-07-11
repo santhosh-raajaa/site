@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/site/static/css/main.cec0520c.css",
+    "main.js": "/site/static/js/main.f0aa0454.js",
+    "static/media/2.jpg": "/site/static/media/2.30a6daddc7c740c9f1ab.jpg",
+    "static/media/1_.jpg": "/site/static/media/1_.360833e5805ad7a2077c.jpg",
+    "static/media/1.png": "/site/static/media/1.b7e42cf0c00b2af7b4cb.png",
+    "static/media/01.png": "/site/static/media/01.5f93dd72c8e47b9d75d0.png",
+    "static/media/8.png": "/site/static/media/8.e297c5ee29906aedca54.png",
+    "static/media/0.png": "/site/static/media/0.a36c7ef388087c5b5032.png",
+    "static/media/9.png": "/site/static/media/9.6732068513b9226cae52.png",
+    "static/media/4.png": "/site/static/media/4.320d30ede2c70fb2c073.png",
+    "static/media/MyResume.pdf": "/site/static/media/MyResume.3b429ca2fc7d597c0ce6.pdf",
+    "static/media/2.png": "/site/static/media/2.c56df784a5fe4ee95938.png",
+    "static/media/5.png": "/site/static/media/5.cca180dcbaa14ea8825e.png",
+    "static/media/Gillmore_needle.png": "/site/static/media/Gillmore_needle.300cead83103062d522a.png",
+    "static/media/6.png": "/site/static/media/6.903dd3a705e1aeac0405.png",
+    "static/media/00.png": "/site/static/media/00.13469ff110a3ed69db7d.png",
+    "static/media/3.png": "/site/static/media/3.f47ef1145bbbbd5b5fd7.png",
+    "static/media/7.png": "/site/static/media/7.a87090525cc6593b948e.png",
+    "static/media/03.png": "/site/static/media/03.6d4583550e248a74117f.png",
+    "static/media/logo.png": "/site/static/media/logo.f8a65dc179381cdb92ff.png",
+    "static/media/10.jpeg": "/site/static/media/10.d8b43999febbef266709.jpeg",
+    "index.html": "/site/index.html",
+    "main.cec0520c.css.map": "/site/static/css/main.cec0520c.css.map",
+    "main.f0aa0454.js.map": "/site/static/js/main.f0aa0454.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cec0520c.css",
+    "static/js/main.f0aa0454.js"
+  ]
+}
